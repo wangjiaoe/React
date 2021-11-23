@@ -1,18 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Avatar from './Avatar';
 import './index.css';
-import App from './APP';
+// import TodoList from './TodoList';
+// import App from './APP';
 // 引用了来自app.js文件中的React组件，并将此组件命名为app
-import Hw from'./Hw';
-	import Photo from './MyFirstComponent';
-import reportWebVitals from './reportWebVitals';
+// import Hw from'./Hw';
+// import Profile from './MyFirstComponent';
+// import reportWebVitals from './reportWebVitals';
+import Card from'./Card';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Hw />
-    <Photo/>
-    <Photo/>
-    <App/>
+    {/* <Profile/> */}
+    {/* <Hw /> */}
+    {/* <Photo/>
+    <Photo/> */}
+    {/* <App/> */}
+    {/* <Avatar/> */}
+    <Card>
+      <Avatar
+      size={200}
+      person={{
+        name:'Hedy Lamarr',
+        imageld:'yXOvdOSs'
+      }}
+      />
+    </Card>
+    {/* <TodoList/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

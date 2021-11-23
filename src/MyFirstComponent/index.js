@@ -1,9 +1,29 @@
+import Avatar from'../Avatar';
 function Profile() {
   return (
-    <img
-      src="https://i.imgur.com/MK3eW3Am.jpg"
-      alt="Katherine Johnson"
+    <>
+    <Avatar
+      size = {200}
+      person={{
+        name:'Katsuko Saruhashi',
+        imageld:'YfeOqp2s'
+      }}
     />
+    <Avatar
+    size={150}
+    person={{
+      name:'Aklilu Lemma',
+      imageld:'OKS67lhs'
+    }}
+    />
+      <Avatar
+        person={{ 
+          name: 'Lin Lanying',
+          imageId: '1bX5QH6s'
+        }}
+      />
+
+    </>
   )
 }
 export default Profile
