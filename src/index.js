@@ -30,17 +30,20 @@ ReactDOM.render(
       />
     </Card> */}
     {/* <TodoList/> */}
-    <PackingList>
+      <PackingList>
       <Item
-      name="Space suit"
+        isPacked={true} 
+        name="Space suit" 
       />
       <Item
-      name="Helmet with a golden leaf"
+        name="Helmet with a golden leaf" 
       />
       <Item
-      name="Photo of Tam"
+        isPacked={true} 
+        name="Photo of Tam" 
       />
     </PackingList>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
