@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Avatar from './Avatar';
+// import Avatar from './Avatar';
 import './index.css';
 // import TodoList from './TodoList';
 // import App from './APP';
 // 引用了来自app.js文件中的React组件，并将此组件命名为app
 // import Hw from'./Hw';
 // import Profile from './MyFirstComponent';
-// import reportWebVitals from './reportWebVitals';
-import Card from'./Card';
+import Item from './Item'
+import PackingList from './PackingList'
+import reportWebVitals from './reportWebVitals';
+// import Card from'./Card';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,7 +20,7 @@ ReactDOM.render(
     <Photo/> */}
     {/* <App/> */}
     {/* <Avatar/> */}
-    <Card>
+    {/* <Card>
       <Avatar
       size={200}
       person={{
@@ -26,8 +28,19 @@ ReactDOM.render(
         imageld:'yXOvdOSs'
       }}
       />
-    </Card>
+    </Card> */}
     {/* <TodoList/> */}
+    <PackingList>
+      <Item
+      name="Space suit"
+      />
+      <Item
+      name="Helmet with a golden leaf"
+      />
+      <Item
+      name="Photo of Tam"
+      />
+    </PackingList>
   </React.StrictMode>,
   document.getElementById('root')
 );
