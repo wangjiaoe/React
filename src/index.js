@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Hw from './Hw';
+import TodoList from './TodoList';
 // // import，Photo 引入内容在本文档中的文字，from './MyfirstComponent' 引入内容的实际来源
 // // 注意：组件文件名：MyfirstComponent，组件function名：Profile（），import引用时引用名改为：Photo
 import Photo from './MyFirstComponent';
@@ -11,10 +12,11 @@ import Photo from './MyFirstComponent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
     <Hw />
     <Photo />
     <Photo />
+    <TodoList />
   </React.StrictMode>
 );
 
